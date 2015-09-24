@@ -20,11 +20,13 @@
 #define PO2NGDAT_VERSION_H
 
 /* Version definitions */
-#define VER_MAJOR         1
-#define VER_MINOR         0
-#define VER_RELEASE       1
-#define VER_BUILD         1
-#define VER_STRING        "1.0.1.1"
+#include "../obj/ver_defs.h"
+//#define VER_MAJOR         1
+//#define VER_MINOR         2
+//#define VER_RELEASE       3
+//#define VER_BUILD         4
+//#define VER_STRING        "1.2.3.4"
+
 /* Program name, copyrights and file names */
 #define PROGRAM_NAME      "Po2ngDat"
 #define PROGRAM_FULL_NAME "PO to engine DAT files converter for KeeperFX"
