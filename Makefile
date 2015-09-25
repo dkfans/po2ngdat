@@ -124,6 +124,7 @@ pkg-before:
 	$(MKDIR) pkg
 	$(CP) bin/* pkg/
 	$(CP) docs/*_readme.txt pkg/
+	$(CP) res/char_encoding_*.txt pkg/
 
 pkg/%.tar.gz: pkg-before
 	-$(ECHO) 'Creating package: $<'
