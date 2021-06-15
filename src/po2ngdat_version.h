@@ -37,10 +37,10 @@
 #define LEGAL_TRADEMARKS  ""
 #define FILE_VERSION VER_STRING
 #define FILE_DESCRIPTION PROGRAM_NAME
-#define ORIGINAL_FILENAME INTERNAL_NAME".exe"
+#define ORIGINAL_FILENAME INTERNAL_NAME ".exe"
 #define PRODUCT_NAME PROGRAM_FULL_NAME
 #define PRODUCT_VERSION    VER_STRING
-#define DEFAULT_LOG_FILENAME INTERNAL_NAME".log"
+#define DEFAULT_LOG_FILENAME INTERNAL_NAME ".log"
 
 #endif /*PO2NGDAT_VERSION_H*/
 /******************************************************************************/
