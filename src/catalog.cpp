@@ -162,7 +162,7 @@ static bool ReadParam(const std::wstring& input, const std::wstring& pattern, st
 }
 
 
-// converts \n into newline character and \\ into \:
+// converts \n into newline character, \\ into \ and \" into ":
 static std::wstring UnescapeCEscapes(const std::wstring& str)
 {
     std::wstringstream out;
@@ -1044,7 +1044,7 @@ std::vector<std::wstring> * Catalog::ToTranslationsVectorByRef(const std::wstrin
         if (trans.length() < 1) {
             trans = ci->GetString();
         }
-        translations->push_back(trans);
+        translations->push_back(UnescapeCEscapes(trans));
     }
     // Remove empty strings at end
     for (std::vector<std::wstring>::reverse_iterator it = translations->rbegin(); it != translations->rend(); ++it)
